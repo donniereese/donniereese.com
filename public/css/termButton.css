@@ -1,0 +1,93 @@
+.termWindow {
+    color:#fff;
+    width: calc(100% - 2em);
+    max-width: 40em;
+    height: 36em;
+    background: #000;
+    margin: 1em;
+    padding: 1em;
+    border: .25em solid #fff;
+    border-radius: 1em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    box-shadow: .25em .5em 3em 0px #000;
+    overflow: hidden;
+}
+
+.termWindow--fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin : 0;
+    border-radius: 0;
+    border: none;
+}
+
+.scrollView {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.termWindow, .termWindow ul li, .termWindow input {
+    font-family: 'Source Code Pro' !important;
+}
+
+div.termWindow input, .termWindow button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    height: 2em;
+    /* border-top: 1px solid #333; */
+    cursor: text;
+    font-family: auto;
+}
+
+.termWindow ul {
+    /* height: 100%; */
+    /* max-height: calc(100% - 2em); */
+    list-style: none;
+    cursor: text;
+}
+
+.termButton {
+    border: .25em solid #000;
+    border-radius: .5em;
+    background-color: #000;
+    color: #fff;
+    width: 4em;
+    height: 4em;
+    padding: .25em;
+    display: block;
+    border:1px solid #fff;
+    cursor: pointer;
+
+    position: absolute;
+    top: .25em;
+    /* bottom: .25em; */
+    right: .25em;
+
+    z-index: 1000;
+
+}
+
+.termButton--sticky {
+    position: fixed;
+    top: auto;
+    bottom: 1em;
+    right: 1em;
+}
+
+.termButton-activated {
+    width: 18em;
+    height: 12em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
