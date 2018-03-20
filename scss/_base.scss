@@ -1,0 +1,21 @@
+body {
+    background-color: $site-white;
+}
+
+h2 {
+    margin-bottom: .65rem;
+}
+
+p {
+    margin: .45rem 0 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.img--vertical-growth {
+    width: auto;
+    max-height: 100%;
+}
