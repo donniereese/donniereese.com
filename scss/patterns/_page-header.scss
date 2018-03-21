@@ -1,0 +1,9 @@
+.page-header {
+    width: 100%;
+    position: relative;
+    transition: max-width 1s ease-in-out;
+
+    > * {
+        vertical-align: top;
+    }
+}

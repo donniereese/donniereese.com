@@ -45,12 +45,12 @@ img {
   max-width: 100%;
   height: auto; }
 
-img.img--vertical-growth {
+.img--vertical-growth {
   width: auto;
   max-height: 100%; }
 
 body {
-  font-family: 'Roboto-Slab', slab-serif;
+  font-family: 'Roboto Slab', slab-serif;
   font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */

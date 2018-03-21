@@ -59,4 +59,3 @@ typings/
 
 #sass cache
 .sass-cache
-*.scss.map
