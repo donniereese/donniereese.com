@@ -2,6 +2,22 @@
 
 @import '../patterns/views/hero-section';
 @import '../patterns/page-header';
+@import '../patterns/portfolio/portfolio-article';
+@import '../patterns/portfolio/portfolio-section';
+
+a.brand-header-logo {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    right: -72%;
+    right: -16.4rem;
+    right: -260px;
+
+    img {
+        height: auto;
+        width: 360px;
+    }
+}
 
 .hero-content {
     width: 100%;
@@ -9,7 +25,7 @@
     text-align: center;
     position: relative;
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 8em;
 }
     .hero-content .hero-logo {
         display: block;
@@ -109,9 +125,6 @@ button {
   background: #1ed9af;
   color: #171d1d; }
 
-.content-section {
-  border-top: 1em solid #171d1d; }
-
 .hero-section {
   background-color: #1B1E20;
   background-color: #EDC10C;
@@ -127,8 +140,7 @@ button {
   border: .45em solid #000;
   background-color: #e9e9ed; }
 
-.portfolio-section {
-  background: #e9e9ed; }
+
 
 .contact-section {
   background-color: #fff; }
@@ -284,15 +296,6 @@ button {
     padding: 1em;
 }
 
-.content-section {
-  padding: 1em; }
-
-.portfolio-article {
-  width: 50%;
-  float: left; }
-  .portfolio-article img {
-    vertical-align: bottom; }
-
 .contact-form {
   margin-top: 1.4em; }
 
@@ -320,10 +323,6 @@ button {
 .page-header {
   transition: height 500ms ease-out 1s; }
 
-@media only screen and (min-width: 480px) {
-  .portfolio-article {
-    width: 33.3333333%; } }
-
 @media only screen and (min-width: 768px) {
   h2 {
     margin-bottom: 1.2em; }
@@ -335,11 +334,7 @@ button {
     padding-top: 4em; }
   .hero-content .about-blurb {
     width: 60%; }
-  .content-section {
-    padding: 1.6em; }
   .about-section {
     padding: 3em; }
-  .portfolio-article {
-    width: 25%; }
   .contact-section .contact-form {
 margin: 0 auto; } }

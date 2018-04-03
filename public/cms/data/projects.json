@@ -1,0 +1,28 @@
+{
+    "configuration": {
+        "name": "Projects",
+        "description": "A list of projects to show on the homepage.",
+        "dataType": "list"
+    },
+    "data": [
+        "name": "Pointless Button",
+        "summary": "An input event API service.",
+        "tags": ['api', 'js', 'node'],
+        "images": [
+            {
+                "name": "Optionally Named",
+                "description": "Optionally described.",
+                "src": "images/data/projects/pointless-button/img1.jpg",
+                "alt": "Screenshot or something"
+            },
+            {
+                "src": "images/data/projects/pointless-button/img2.jpg",
+                "alt": "Screenshot or something 2"
+            },
+            {
+                "src": "images/data/projects/pointless-button/img3.jpg",
+                "alt": "Screenshot or something 3"
+            }
+        ]
+    ]
+}

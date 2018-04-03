@@ -1,0 +1,11 @@
+.content-section {
+    border-top: 1em solid #171d1d;
+    padding: 1rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .content-section {
+        padding: 1.6em;
+    }
+}

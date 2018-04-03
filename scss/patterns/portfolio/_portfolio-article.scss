@@ -1,0 +1,58 @@
+.portfolio-article {
+    // width: 50%;
+    // float: left;
+    background-color: $site-white;
+    padding: 1rem .5rem;
+
+    h3 {
+        font-size: 1.2rem;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+
+        &::before {
+            background-color: $site-purple;
+            content: '';
+            display: block;
+            height: .25rem;
+            width: 6rem;
+        }
+    }
+
+    figure {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -.5rem;
+
+        figcaption {
+            flex-grow: 2;
+            display: block;
+            padding: .5rem;
+            width: 100%;
+        }
+
+        img {
+            // vertical-align: bottom;
+            // display: flex;
+            // width: 50%;
+            flex-basis: 50%;
+            width: 50%;
+            height: auto;
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .portfolio-article {
+        width: 33.3333333%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .portfolio-article {
+        width: 25%;
+    }
+}

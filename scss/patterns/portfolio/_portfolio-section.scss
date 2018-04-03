@@ -1,0 +1,21 @@
+.portfolio-section {
+    background-color: #e9e9ed;
+    background-color: $site-purple;
+    padding: 1rem .25rem;
+
+    h2 {
+        margin-left: .5rem;
+    }
+
+    // > .pane {
+    //     background-color: #fff;
+    //     border: 1px solid darken(#e0e0ed, 20%);
+    //     border-radius: .25rem;
+    //     padding: 1rem;
+    //     box-shadow: 0 .125rem .125rem 0 #a9a9ad;
+    // }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
