@@ -62,9 +62,28 @@ body {
 @media only screen and (min-width: 768px) {
   .content-section {
     padding: 1.6em; } }
+.button {
+  background-color: #fff;
+  border: 1px solid #dededf;
+  border-radius: .25rem;
+  color: #101;
+  margin: .25rem .5rem;
+  outline: 0;
+  padding: .25rem 1rem; }
+  .button::hover {
+    cursor: pointer;
+    text-decoration: none; }
+
+.button--highlight {
+  box-shadow: inset 0 -0.25rem 0 0 rgba(17, 0, 17, 0.2); }
+
+.button--highlight-on-hover::hover {
+  box-shadow: inset 0 -0.25rem 0 0 rgba(17, 0, 17, 0.2); }
+
 .hero-section {
-  position: relative;
-  height: 90vh; }
+  height: 90vh;
+  padding-top: 2rem;
+  position: relative; }
 
 .page-header {
   width: 100%;
@@ -93,38 +112,94 @@ body {
     flex-wrap: wrap;
     margin: 0 -.5rem; }
     .portfolio-article figure figcaption {
-      flex-grow: 2;
       display: block;
+      flex-grow: 2;
       padding: .5rem;
       width: 100%; }
     .portfolio-article figure img {
       flex-basis: 50%;
       width: 50%;
       height: auto; }
+      .portfolio-article figure img:hover {
+        border: 0.25rem solid #1ed9af !important;
+        outline: 0; }
+  .portfolio-article .button {
+    margin-left: 0; }
 
-@media only screen and (min-width: 480px) {
-  .portfolio-article {
-    width: 33.3333333%; } }
-@media only screen and (min-width: 768px) {
-  .portfolio-article {
-    width: 25%; } }
 .portfolio-section {
   background-color: #e9e9ed;
   background-color: #5863f8;
-  padding: 1rem .25rem; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
   .portfolio-section h2 {
     margin-left: .5rem; }
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center; }
+  .page-header > a {
+    display: block;
+    order: 1;
+    height: 100%;
+    flex-basis: 124px;
+    flex-grow: 0; }
+    .page-header > a img {
+      width: 560px !important; }
+  .page-header > nav {
+    order: 2;
+    align-self: flex-start;
+    flex-grow: 0; }
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  border-left: 0.25rem solid #43aa8b; }
+  .site-nav > a {
+    font-size: 200%;
+    text-align: left;
+    padding: .25rem .5rem;
+    text-shadow: 0 0.125rem 0.0625rem rgba(17, 0, 17, 0.2); }
+
+.main-nav,
+.main-nav a {
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.main-nav {
+  background: #171d1d;
+  background: #43aa8b;
+  display: inline-block;
+  margin-left: -4px; }
+
+.main-nav a {
+  padding: .45em .65em;
+  padding: .74em .65em; }
+
+.main-nav {
+  background: #1ed9af;
+  background: #33253F; }
+
+.main-nav a {
+  color: #efe9f4; }
+
+.main-nav {
+  font-size: 1.2em; }
+
+.main-nav a {
+  font-size: 1.25em; }
 
 a.brand-header-logo {
   overflow: hidden;
   display: block;
   position: relative;
-  right: -72%;
-  right: -16.4rem;
-  right: -260px; }
-  a.brand-header-logo img {
+  width: 134px; }
+  a.brand-header-logo > img {
     height: auto;
-    width: 360px; }
+    max-width: none;
+    width: 480px; }
 
 .hero-content {
   width: 100%;
@@ -152,21 +227,10 @@ a.brand-header-logo {
 .hero-content .about-blurb .link-to-more {
   padding: .25em 1em; }
 
-.header-title,
-.main-nav,
-.main-nav a {
+.header-title {
   display: inline-block;
   zoom: 1;
-  *display: inline; }
-
-.main-nav {
-  display: inline-block;
-  background: #171d1d;
-  margin-left: -4px; }
-
-.main-nav a {
-  padding: .45em .65em;
-  padding: .74em .65em; }
+  display: inline; }
 
 .standout-nav {
   margin: 1em;
@@ -205,7 +269,7 @@ a {
   color: #5863f8; }
 
 a:hover {
-  color: white; }
+  color: #33253f; }
 
 a:visited {
   color: #040b66; }
@@ -237,13 +301,6 @@ button {
   background-color: #1B1E20;
   background-color: #EDC10C;
   background: url("https://donniereese.com/images/wiggle-bg.svg") top left/52px 26px #EDC10C; }
-
-.main-nav {
-  background: #1ed9af;
-  background: #33253F; }
-
-.main-nav a {
-  color: #efe9f4; }
 
 .standout-nav {
   border: .45em solid #000;
@@ -316,12 +373,6 @@ button {
   height: 100%;
   width: auto;
   border: 1px solid blue; }
-
-.main-nav {
-  font-size: 1.2em; }
-
-.main-nav a {
-  font-size: 1.25em; }
 
 .about-blurb {
   font-size: 2.2em; }

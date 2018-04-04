@@ -1,4 +1,28 @@
-$site-white: #fff;
-$site-black: #101;
-$site-purple: #5863f8;
-$site-green: #1ed9af;
+$site-white:    #fff;
+$site-black:    #101;
+$site-blue:     #5863f8;
+$site-purple:   #33253f;
+$site-green:    #1ed9af;
+$site-yellow:   #ecc02f;
+
+$site-green--alternate: #43aa8b;
+
+$site-black--translucent20: transparentize($site-black, 0.2);
+$site-black--translucent40: transparentize($site-black, 0.4);
+$site-black--translucent60: transparentize($site-black, 0.6);
+$site-black--translucent80: transparentize($site-black, 0.8);
+
+$site-blue--translucent20: transparentize($site-blue, 0.2);
+$site-blue--translucent40: transparentize($site-blue, 0.4);
+$site-blue--translucent60: transparentize($site-blue, 0.6);
+$site-blue--translucent80: transparentize($site-blue, 0.8);
+
+$site-green--translucent20: transparentize($site-green, 0.2);
+$site-green--translucent40: transparentize($site-green, 0.4);
+$site-green--translucent60: transparentize($site-green, 0.6);
+$site-green--translucent80: transparentize($site-green, 0.8);
+
+$site-yellow--translucent20: transparentize($site-yellow, 0.2);
+$site-yellow--translucent40: transparentize($site-yellow, 0.4);
+$site-yellow--translucent60: transparentize($site-yellow, 0.6);
+$site-yellow--translucent80: transparentize($site-yellow, 0.8);

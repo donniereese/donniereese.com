@@ -1,0 +1,22 @@
+.button {
+    background-color: $site-white;
+    border: 1px solid #dededf;
+    border-radius: .25rem;
+    color: $site-black;
+    margin: .25rem .5rem;
+    outline: 0;
+    padding: .25rem 1rem;
+
+    &::hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.button--highlight {
+    box-shadow: inset 0 -.25rem 0 0 $site-black--translucent80;
+}
+
+.button--highlight-on-hover::hover {
+    box-shadow: inset 0 -.25rem 0 0 $site-black--translucent80;
+}

@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="css/pages/home.css">
 	<link rel="stylesheet" href="css/termButton.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 </head>
 <body>
 	<div class="hero-section">
@@ -15,7 +16,8 @@
 			<!-- <span class="header-image">
 				<img src="images/logo-name-darkonlight copy@2x.png" alt="" />
 			</span> -->
-			<nav class="main-nav">
+			<nav class="site-nav">
+				<!-- <i class="fas fa-ellipsis-v"></i> -->
 				<a href="#about-section">About</a>
 				<a href="#portfolio-section">Portfolio</a>
 				<a href="#contact-section">Contact</a>
@@ -71,7 +73,7 @@
 		</section>
 		<section id="portfolio-section" class="content-section portfolio-section float-clear">
 			<h2>Portfolio</h2>
-			<article class="pane portfolio-article">
+			<article class="portfolio-article">
 				<h3>Pointless Button</h3>
 				<summary>
 					<p>
@@ -90,29 +92,13 @@
 					</p>
 				</summary>
 				<figure>
-					<img src="images/assets/placeholder-500x500.png" alt="">
-					<img src="images/assets/placeholder-500x500.png" alt="">
-					<img src="images/assets/placeholder-500x500.png" alt="">
+					<img src="images/assets/placeholder-500x500.png" tabindex="99" alt="">
+					<img src="images/assets/placeholder-500x500.png" tabindex="99" alt="">
+					<img src="images/assets/placeholder-500x500.png" tabindex="99" alt="">
 					<figcaption>
 					</figcaption>
 				</figure>
 				<a href="" class="button button--theme-purple">Read The Case Study</a>
-			</article>
-
-			<article class="portfolio-article">
-				<img src="http://laboratory.donniereese.com/images/placeholder-500x500.png" alt="" />
-				<div class="portfolio-article-section">
-					<p>
-						This is a piece about my portfolio
-					</p>
-				</div>
-			</article>
-
-			<article class="portfolio-article">
-				<img src="http://laboratory.donniereese.com/images/placeholder-500x500.png" alt="" />
-			</article>
-			<article class="portfolio-article">
-				<img src="http://laboratory.donniereese.com/images/placeholder-500x500.png" alt="" />
 			</article>
 		</section>
 	</main>
@@ -139,7 +125,10 @@
 			<a href="https://www.linkedin.com/in/donniereese">LinkedIn</a>
 		</nav>
 		<span class="fine-print">
-		Content on this page, in part or whole, is owned by Donnie Reese, 2016 &copy;
+		Content on this page, in part or whole, is owned by Donnie Reese, <script type="text/javascript">
+			const d = new Date();
+			document.write(d.getFullYear());
+		</script> &copy;
 		</span>
 	</footer>
 	<div class="termButton termButton--sticky">&dollar;&gt;</div>

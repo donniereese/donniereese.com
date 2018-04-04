@@ -1,21 +1,29 @@
 @import '../main';
 
+@import '../bits/buttons';
+
 @import '../patterns/views/hero-section';
 @import '../patterns/page-header';
 @import '../patterns/portfolio/portfolio-article';
 @import '../patterns/portfolio/portfolio-section';
+@import '../patterns/site-nav';
+
+
 
 a.brand-header-logo {
     overflow: hidden;
     display: block;
     position: relative;
-    right: -72%;
-    right: -16.4rem;
-    right: -260px;
+    // right: -72%;
+    // right: -16.4rem;
+    // right: -260px;
+    width: 134px;
 
-    img {
+    > img {
         height: auto;
-        width: 360px;
+        // width: 360px;
+        max-width: none;
+        width: 480px;
     }
 }
 
@@ -46,23 +54,11 @@ a.brand-header-logo {
             padding: .25em 1em;
         }
 
-.header-title,
-.main-nav,
-.main-nav a {
+.header-title {
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
-
-.main-nav {
-    display: inline-block;
-    background: #171d1d;
-    margin-left: -4px;
-}
-    .main-nav a {
-        padding: .45em .65em;
-        padding: .74em .65em;
-    }
 
 .standout-nav {
   margin: 1em;
@@ -97,9 +93,9 @@ h2 {
   color: #171d1d; }
 
 a {
-  color: #5863f8; }
+  color: $site-blue; }
   a:hover {
-    color: white; }
+    color: $site-purple; }
   a:visited {
     color: #040b66; }
 
@@ -129,12 +125,6 @@ button {
   background-color: #1B1E20;
   background-color: #EDC10C;
   background: url('https://donniereese.com/images/wiggle-bg.svg') top left / 52px 26px #EDC10C; }
-
-.main-nav {
-  background: #1ed9af;
-  background: #33253F; }
-  .main-nav a {
-    color: #efe9f4; }
 
 .standout-nav {
   border: .45em solid #000;
@@ -209,11 +199,6 @@ button {
             width: auto;
             border: 1px solid blue;
         }
-
-.main-nav {
-  font-size: 1.2em; }
-  .main-nav a {
-    font-size: 1.25em; }
 
 .about-blurb {
   font-size: 2.2em; }

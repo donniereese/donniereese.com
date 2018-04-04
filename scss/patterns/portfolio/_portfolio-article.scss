@@ -10,7 +10,7 @@
         padding-top: .5rem;
 
         &::before {
-            background-color: $site-purple;
+            background-color: $site-blue;
             content: '';
             display: block;
             height: .25rem;
@@ -26,8 +26,8 @@
         margin: 0 -.5rem;
 
         figcaption {
-            flex-grow: 2;
             display: block;
+            flex-grow: 2;
             padding: .5rem;
             width: 100%;
         }
@@ -40,19 +40,27 @@
             width: 50%;
             height: auto;
 
+            &:hover {
+                border: .25rem solid $site-green !important;
+                outline: 0;
+            }
         }
+    }
+
+    .button {
+        margin-left: 0;
     }
 }
 
 
 @media only screen and (min-width: 480px) {
-    .portfolio-article {
-        width: 33.3333333%;
-    }
+    // .portfolio-article {
+    //     width: 33.3333333%;
+    // }
 }
 
 @media only screen and (min-width: 768px) {
-    .portfolio-article {
-        width: 25%;
-    }
+    // .portfolio-article {
+    //     width: 25%;
+    // }
 }
