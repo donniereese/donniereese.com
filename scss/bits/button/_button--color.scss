@@ -1,0 +1,89 @@
+.btn--thm-white {
+    background-color: $site-white;
+    color: $site-black;
+
+    &:visited {color: $site-black; }
+}
+
+.btn--thm-black {
+    background-color: $site-black;
+    color: $site-white;
+
+    &:visited {color: $site-white; }
+}
+
+.btn--thm-blue {
+    background-color: $site-blue;
+    color: $site-white;
+
+    &:visited {color: $site-white; }
+}
+
+.btn--thm-purple {
+    background-color: $site-purple;
+    color: $site-white;
+
+    &:visited {color: $site-white; }
+}
+
+.btn--thm-green {
+    background-color: $site-green;
+    color: $site-white;
+
+    &:visited {color: $site-white; }
+}
+
+.btn--thm-yellow {
+    background-color: $site-yellow;
+    color: $site-white;
+
+    &:visited {color: $site-white; }
+}
+
+.btn--bg-white {
+    background-color: $site-white;
+}
+
+.btn--bg-black {
+    background-color: $site-black;
+}
+
+.btn--bg-blue {
+    background-color: $site-blue;
+}
+
+.btn--bg-purple {
+    background-color: $site-purple;
+}
+
+.btn--bg-green {
+    background-color: $site-green;
+}
+
+.btn--bg-yellow {
+    background-color: $site-yellow
+}
+
+.btn--fg-white {
+    color: $site-white;
+}
+
+.btn--fg-black {
+    color: $site-black;
+}
+
+.btn--fg-blue {
+    color: $site-blue;
+}
+
+.btn--fg-purple {
+    color: $site-purple;
+}
+
+.btn--fg-green {
+    color: $site-green;
+}
+
+.btn--fg-yellow {
+    color: $site-yellow
+}

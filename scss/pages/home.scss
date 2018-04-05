@@ -34,25 +34,49 @@ a.brand-header-logo {
     position: relative;
     margin: 0 auto;
     padding-top: 8em;
-}
-    .hero-content .hero-logo {
+
+    .hero-logo {
         display: block;
         margin: 0 auto;
         max-width: 1000px;
     }
-    .hero-content .brand-header-logo {
+
+    .brand-header-logo {
         display: inline-block;
         max-height: 100%;
         position: relative;
     }
-    .hero-content .about-blurb {
+
+    .about-blurb {
         margin: 0 auto;
         padding-top: .75em;
         display: block;
-    }
-        .hero-content .about-blurb .link-to-more {
-            padding: .25em 1em;
+
+        .button {
+            width: 60%;
+            margin: 1rem 20%;
         }
+
+        p {
+            background-color: $site-blue;
+            display: inline-block;
+            margin: .25rem 1rem;
+            padding: .125rem .5rem;
+            float: left;
+            clear: left;
+
+            &:first-of-type {
+                background-color: none;
+                margin-top: 1rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
 
 .header-title {
     display: inline-block;
@@ -200,9 +224,6 @@ button {
             border: 1px solid blue;
         }
 
-.about-blurb {
-  font-size: 2.2em; }
-
 .aside-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8em;
@@ -309,17 +330,24 @@ button {
   transition: height 500ms ease-out 1s; }
 
 @media only screen and (min-width: 768px) {
-  h2 {
-    margin-bottom: 1.2em; }
-  .hero-content .about-blurb,
-  .about-section .subsection,
-  .contact-section .contact-form {
-    width: 75%; }
-  .hero-content {
-    padding-top: 4em; }
-  .hero-content .about-blurb {
-    width: 60%; }
-  .about-section {
-    padding: 3em; }
-  .contact-section .contact-form {
-margin: 0 auto; } }
+    h2 {
+        margin-bottom: 1.2em;
+    }
+    .hero-content .about-blurb,
+    .about-section .subsection,
+    .contact-section .contact-form {
+        width: 75%;
+    }
+    .hero-content {
+        padding-top: 4em;
+    }
+    .hero-content .about-blurb {
+        width: 60%;
+    }
+    .about-section {
+        padding: 3em;
+    }
+    .contact-section .contact-form {
+        margin: 0 auto;
+    }
+}
