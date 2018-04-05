@@ -176,7 +176,8 @@ body {
 .portfolio-article {
   background-color: #fff;
   padding: 1rem .5rem;
-  border-radius: .5rem; }
+  border-radius: .5rem;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(17, 0, 17, 0.1); }
   .portfolio-article h3 {
     font-size: 1.2rem;
     padding-bottom: .5rem;
