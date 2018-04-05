@@ -175,7 +175,8 @@ body {
 
 .portfolio-article {
   background-color: #fff;
-  padding: 1rem .5rem; }
+  padding: 1rem .5rem;
+  border-radius: .5rem; }
   .portfolio-article h3 {
     font-size: 1.2rem;
     padding-bottom: .5rem;
