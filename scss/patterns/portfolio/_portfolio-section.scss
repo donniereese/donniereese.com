@@ -1,24 +1,49 @@
 .portfolio-section {
-    background-color: #e9e9ed;
-    background-color: $site-blue;
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/funky-lines.png');
-    // padding: 1rem .25rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  align-items: space-around;
+  background-color: #e9e9ed;
+  background-color: $site-blue;
+  // background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/funky-lines.png');
+  background-image: url('../../images/funky-lines-green.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  // padding: 1rem .25rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  h2 {
+    margin-left: .5rem;
+    transition: margin-left 1s, margin-right 1s;
+  }
+
+  // > .pane {
+  //     background-color: #fff;
+  //     border: 1px solid darken(#e0e0ed, 20%);
+  //     border-radius: .25rem;
+  //     padding: 1rem;
+  //     box-shadow: 0 .125rem .125rem 0 #a9a9ad;
+  // }
+
+  @media only screen and (min-width: 520px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (min-width: 900px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-around;
 
     h2 {
-        margin-left: .5rem;
+        flex-basis: 100%;
     }
-
-    // > .pane {
-    //     background-color: #fff;
-    //     border: 1px solid darken(#e0e0ed, 20%);
-    //     border-radius: .25rem;
-    //     padding: 1rem;
-    //     box-shadow: 0 .125rem .125rem 0 #a9a9ad;
-    // }
+  }
 }
 
-@media only screen and (min-width: 768px) {
-
-}
+// @media only screen and (min-width: 700px) {
+//   .portfolio-section h2 {
+//       margin-left: calc(25% / 2);
+//       margin-right: calc(25% / 2);
+//   }
+// }

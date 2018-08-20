@@ -1,89 +1,112 @@
 .btn--thm-white {
-    background-color: $site-white;
-    color: $site-black;
+  background-color: $site-white;
+  color: $site-black;
 
-    &:visited {color: $site-black; }
+  &:visited { color: $site-black; }
 }
 
 .btn--thm-black {
-    background-color: $site-black;
-    color: $site-white;
+  background-color: $site-black;
+  color: $site-white;
 
-    &:visited {color: $site-white; }
+  &:visited { color: $site-white; }
 }
 
 .btn--thm-blue {
-    background-color: $site-blue;
-    color: $site-white;
+  background-color: $site-blue;
+  color: $site-white;
 
-    &:visited {color: $site-white; }
+  &:visited { color: $site-white; }
 }
 
 .btn--thm-purple {
-    background-color: $site-purple;
-    color: $site-white;
+  background-color: $site-purple;
+  color: $site-white;
 
-    &:visited {color: $site-white; }
+  &:visited { color: $site-white; }
 }
 
 .btn--thm-green {
-    background-color: $site-green;
-    color: $site-white;
+  background-color: $site-green;
+  color: $site-white;
 
-    &:visited {color: $site-white; }
+  &:visited { color: $site-white; }
 }
 
 .btn--thm-yellow {
-    background-color: $site-yellow;
-    color: $site-white;
+  background-color: $site-yellow;
+  color: $site-white;
 
-    &:visited {color: $site-white; }
+  &:visited { color: $site-white; }
 }
 
 .btn--bg-white {
-    background-color: $site-white;
+  background-color: $site-white;
 }
 
 .btn--bg-black {
-    background-color: $site-black;
+  background-color: $site-black;
 }
 
 .btn--bg-blue {
-    background-color: $site-blue;
+  background-color: $site-blue;
 }
 
 .btn--bg-purple {
-    background-color: $site-purple;
+  background-color: $site-purple;
 }
 
 .btn--bg-green {
-    background-color: $site-green;
+  background-color: $site-green;
 }
 
 .btn--bg-yellow {
-    background-color: $site-yellow
+  background-color: $site-yellow
 }
 
 .btn--fg-white {
-    color: $site-white;
+  color: $site-white;
 }
 
 .btn--fg-black {
-    color: $site-black;
+  color: $site-black;
 }
 
 .btn--fg-blue {
-    color: $site-blue;
+  color: $site-blue;
 }
 
 .btn--fg-purple {
-    color: $site-purple;
+  color: $site-purple;
 }
 
 .btn--fg-green {
-    color: $site-green;
+  color: $site-green;
 }
 
 .btn--fg-yellow {
-    color: $site-yellow
+  color: $site-yellow
+}
+
+// Borders
+.btn--border-yellow {
+  border: .5rem solid $site-yellow !important;
+}
+
+.btn--border-blue {
+  border: .5rem solid $site-blue !important;
+}
+
+.btn--border-accent {
+  border: .5rem solid $site-accent;
+}
+
+
+// Shadows
+.btn--shadow-black {
+  box-shadow: .2rem .4rem 1rem .4rem $site-black--translucent80;
+}
+
+.btn--shadow-black-half-dist {
+  box-shadow: .1rem .2rem .6rem .2rem $site-black--translucent80;
 }

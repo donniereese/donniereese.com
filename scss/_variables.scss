@@ -1,10 +1,31 @@
-$site-white:    #fff;
-$site-black:    #101;
-$site-blue:     #5863f8;
-$site-purple:   #33253f;
-$site-green:    #1ed9af;
-$site-yellow:   #ecc02f;
+// original color scheme
+$light:    #fff;
+$dark:    #101;
+$sharp-blue:     #5863f8;
+$dark-purple:   #33253f;
+$bright-seafoam-green:    #1ed9af;
+$warm-yellow:   #ecc02f;
 
+
+// new color scheme
+$muted-red: #db504a;
+$dark-blue: #222e50;
+$bright-blue-green: #5dd9c1;
+$less-warm-yellow: #e8c232;
+$green-grey: #4f6d7a;
+
+
+// Site colors
+$site-white:    $light;
+$site-black:    $dark;
+$site-red:     $muted-red;
+$site-blue: $sharp-blue;
+$site-purple:   $dark-blue;
+$site-green:    $bright-blue-green;
+$site-yellow:   $less-warm-yellow;
+
+// points
+$site-accent: $site-red;
 $site-green--alternate: #43aa8b;
 
 $site-black--translucent20: transparentize($site-black, 0.2);

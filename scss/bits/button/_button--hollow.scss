@@ -1,0 +1,68 @@
+.btn--hollow-white {
+    background-color: transparent;
+    border: .25rem solid $site-white;
+    color: $site-white;
+
+    &:visited {
+        color: $site-white;
+    }
+}
+
+.btn--hollow-black {
+    background-color: transparent;
+    border: .25rem solid $site-black;
+    color: $site-black;
+
+    &:visited {
+        color: $site-black;
+    }
+}
+
+.btn--hollow-blue {
+    background-color: transparent;
+    border: .25rem solid $site-blue;
+    color: $site-blue;
+
+    &:visited {
+        color: $site-blue;
+    }
+}
+
+.btn--hollow-purple {
+    background-color: transparent;
+    border: .25rem solid $site-purple;
+    color: $site-purple;
+
+    &:visited {
+        color: $site-purple;
+    }
+}
+
+.btn--hollow-green {
+    background-color: transparent;
+    border: .25rem solid $site-green;
+    color: $site-green;
+
+    &:visited {
+        color: $site-green;
+    }
+}
+
+.btn--hollow-yellow {
+    background-color: transparent;
+    border: .25rem solid $site-yellow;
+    color: $site-yellow;
+
+    &:visited {
+        color: $site-yellow;
+    }
+}
+
+.btn--hollow-white,
+.btn--hollow-black,
+.btn--hollow-blue,
+.btn--hollow-purple,
+.btn--hollow-green,
+.btn--hollow-yellow {
+    text-shadow: 0 .125rem .25rem $site-black--translucent80;
+}

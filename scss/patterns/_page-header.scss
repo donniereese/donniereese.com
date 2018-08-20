@@ -1,9 +1,19 @@
 .page-header {
-    width: 100%;
-    position: relative;
-    transition: max-width 1s ease-in-out;
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: max-width 1s ease-in-out;
+  width: 100%;
+  z-index: 5;
 
-    > * {
-        vertical-align: top;
-    }
+  .header-image {
+    max-width: 14rem;
+  }
+
+  > * {
+    vertical-align: top;
+  }
 }

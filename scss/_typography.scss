@@ -1,9 +1,41 @@
+@import 'mixins/min-max-font-size';
+
 body {
     font-family: 'Roboto Slab', slab-serif;
     font-weight: 400;
 }
 
 .about-blurb {
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
     text-align: left;
+
+    p {
+        // $base-p: 1rem + 3vh;
+        $base-p: 3vh;
+        // font-size: 2.2rem;
+        // font-size: 9vh;
+        font-size: $base-p;
+
+        @include responsive-font(5vw, 24px);
+
+        @media only screen and (max-width: 460px) {
+            // border: 1px solid red;
+        }
+
+        @media only screen and (max-height: 460px) {
+            // display: inline;
+            // margin-right: 0;
+            // font-size: calc(calc(1rem + 6vw) * 0.8);
+        }
+    }
+}
+
+.portfolio-section {
+
+}
+
+.portfolio-article {
+    p {
+        font-size: 1.2rem;
+    }
 }

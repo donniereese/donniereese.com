@@ -14,6 +14,18 @@ class WebTerm {
         this.log = null;
         this.scrollView = null;
         this.currentInput = '';
+        this.message = `
+HelloTerminal v${this._version}
+Status: No Connection...
+User: Not Logged In...
+_______________________________
+Hello, world!
+This is a little toy teminal
+that I built. You can type
+"help" to learn how to use it.
+It can help you navigate.
+_______________________________\n  \n
+`;
 
         this.history = [];
         this.historyPointer = -1;
@@ -213,6 +225,8 @@ class WebTerm {
         this.input.addEventListener('keyup', this.command.bind(this));
         // set focus on input
         this.input.focus();
+        // print the message
+        this.writeToBuffer(this.message.split('\n'));
 
         this.visible = true;
     }
