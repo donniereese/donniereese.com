@@ -83,6 +83,16 @@ div.termWindow input, .termWindow button {
     top: auto;
     bottom: 1em;
     right: 1em;
+
+    transition: border .06s, bottom .06s, right .06s;
+}
+
+.termButton--sticky:hover {
+    border: .6rem solid #5dd9c1;
+    bottom: .7rem;
+    height: 4.3rem;
+    right: .7rem;
+    width: 4.3rem;
 }
 
 .termButton-activated {
