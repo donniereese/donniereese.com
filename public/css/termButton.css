@@ -103,9 +103,13 @@ div.termWindow input, .termWindow button {
     right: 1em;
 }
 
-.termButton--sticky {
+.termButton--hidden {
+    display: none;
+}
+
+.termButton--animation {
     /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 1s 2.8s, bop 2s ease-in 2s 1 forwards;
+    animation: shake 1s .8s, bop 2s ease-in 0s 1 forwards;
     /* When the animation is finished, start again */
     animation-iteration-count: 1;
 }

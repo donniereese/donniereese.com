@@ -38,6 +38,10 @@ _______________________________\n  \n
         this.button = buttonMatches.item(0);
         // add the event listener on the button
         this.button.addEventListener('click', this.toggleTerminal.bind(this));
+        setTimeout(() => {
+            this.button.classList.replace('termButton--hidden', 'termButton--animation');
+            console.log('banana')
+        }, 2000)
     }
 
     /**
