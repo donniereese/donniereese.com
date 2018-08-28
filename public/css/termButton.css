@@ -92,3 +92,38 @@ div.termWindow input, .termWindow button {
     bottom: 1em;
     right: 1em;
 }
+
+.termButton--sticky {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s 0, bop .5s 1s 1;
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translate(2px, 2px) rotate(0deg); box-shadow: 0 0 .45rem 0 rgba(0,0,0,.4); border: .5rem solid #5dd9c1; }
+    10% { transform: translate(-2px, -4px) rotate(-2deg); box-shadow: 4px 6px .45rem 0 rgba(0,0,0,.4); border: .5rem solid #5dd9c1; }
+    20% { transform: translate(-6px, 0px) rotate(2deg); box-shadow: 8px 2px .45rem 0 rgba(0,0,0,.4); border: .1rem solid #5dd9c1; }
+    30% { transform: translate(6px, 4px) rotate(0deg); box-shadow: -4px 2px .45rem 0 rgba(0,0,0,.4); border: .1rem solid #5dd9c1; }
+    40% { transform: translate(2px, -2px) rotate(2deg); box-shadow: 0 4px .45rem 0 rgba(0,0,0,.4); border: .5rem solid #5dd9c1; }
+    50% { transform: translate(-2px, 4px) rotate(-2deg); box-shadow: 4px -2px .45rem 0 rgba(0,0,0,.4); border: .5rem solid #5dd9c1; }
+    60% { transform: translate(-6px, 2px) rotate(0deg); box-shadow: 8px 0 .45rem 0 rgba(0,0,0,.4); border: .1rem solid #5dd9c1; }
+    70% { transform: translate(6px, 2px) rotate(-2deg); box-shadow: -4px 0 .45rem 0 rgba(0,0,0,.4); border: .1rem solid #5dd9c1; }
+    80% { transform: translate(-2px, -2px) rotate(2deg); box-shadow: 4px 4px .45rem 0 rgba(0,0,0,.4); border: .5rem solid #5dd9c1; }
+    90% { transform: translate(2px, 4px) rotate(0deg); box-shadow: 0 -2px .45rem 0 rgba(0,0,0,.4); border: .5rem solid #5dd9c1; }
+    100% { transform: translate(2px, -4px) rotate(-2deg); box-shadow: none; border: 0; }
+}
+
+/* @keyframes bop {
+    0% { bottom: 1rem; }
+    10% { bottom: 2rem; }
+    20% { bottom: 1rem; }
+    30% { bottom: 1.6rem; }
+    40% { bottom: 1rem; }
+    50% { bottom: 1.3rem; }
+    60% { bottom: 1rem; }
+    70% { bottom: 1.2rem }
+    80% { bottom: 1rem; }
+    90% { bottom: 1.1rem; }
+    100% { bottom: 1rem }
+} */
