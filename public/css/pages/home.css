@@ -263,6 +263,61 @@
       .portfolio-section h2 {
         flex-basis: 100%; } }
 
+.message {
+  animation: fadein 2s;
+  background-color: #c0c9e4;
+  border: 0.25rem solid #222e50;
+  border-radius: .25rem;
+  color: #33253f;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: .5rem 0; }
+
+.message-accent {
+  background-color: #405798;
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem; }
+  .message-accent i {
+    color: #fff;
+    display: inline; }
+
+.success-message {
+  background-color: #d9f6f0;
+  border: 0.25rem solid #72dec9;
+  color: #33253f; }
+  .success-message .message-accent {
+    background-color: #384147; }
+    .success-message .message-accent i {
+      color: #5dd9c1; }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    margin: 0rem 0 1rem; }
+  to {
+    opacity: 1;
+    margin: .5rem 0 .5rem; } }
+.error-message {
+  background-color: #fdf5f4;
+  border: 0.25rem solid #eca29f;
+  color: #33253f; }
+
+.error-accent {
+  background-color: #33253f; }
+  .error-accent i {
+    color: #ecc02f;
+    display: inline; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 a.brand-header-logo {
   display: block;
   position: relative;

@@ -1,0 +1,49 @@
+.message {
+  animation: fadein 2s;
+  background-color: $dark-blue--lighten60;
+  border: .25rem solid $dark-blue;
+  border-radius: .25rem;
+  color: $dark-purple;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: .5rem 0;
+  // padding: 1rem;
+}
+
+.message-accent {
+  background-color: $dark-blue--lighten20;
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+
+  i {
+    color: $site-white;
+    display: inline;
+  }
+}
+
+
+.success-message {
+  background-color: $site-green--lighten30;
+  border: .25rem solid $site-green--lighten5;
+  color: $dark-purple;
+
+  .message-accent {
+    background-color: darken(mix($site-green--lighten20, $dark-purple, 40%), 20%);
+    // border-right: .25rem solid mix($site-green--lighten20, $dark-purple, 40%);
+
+    i {
+      color: $bright-blue-green;
+    }
+  }
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; margin: 0rem 0 1rem; }
+  to   { opacity: 1; margin: .5rem 0 .5rem; }
+}

@@ -1,0 +1,24 @@
+.error-message {
+  background-color: $site-red--lighten40;
+  border: .25rem solid $site-red--lighten20;
+  color: $dark-purple;
+}
+
+.error-accent {
+  background-color: $dark-purple;
+  // border-radius: 50%;
+  // border-right: .25rem solid mix($site-red--lighten20, $dark-purple, 40%);
+  // margin: -1rem 1rem -1rem -1rem;
+  // min-width: 3.6rem;
+  // padding: 1rem;
+
+  i {
+    color: $warm-yellow;
+    display: inline;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

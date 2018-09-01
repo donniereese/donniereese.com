@@ -28,6 +28,30 @@ $site-yellow:   $less-warm-yellow;
 $site-accent: $site-red;
 $site-green--alternate: #43aa8b;
 
+// Light colors
+$site-red--lighten5: lighten($site-red, 5%);
+$site-red--lighten10: lighten($site-red, 10%);
+$site-red--lighten15: lighten($site-red, 15%);
+$site-red--lighten20: lighten($site-red, 20%);
+$site-red--lighten30: lighten($site-red, 30%);
+$site-red--lighten40: lighten($site-red, 40%);
+
+$dark-blue--lighten5: lighten($dark-blue, 5%);
+$dark-blue--lighten10: lighten($dark-blue, 10%);
+$dark-blue--lighten15: lighten($dark-blue, 15%);
+$dark-blue--lighten20: lighten($dark-blue, 20%);
+$dark-blue--lighten30: lighten($dark-blue, 30%);
+$dark-blue--lighten40: lighten($dark-blue, 40%);
+$dark-blue--lighten60: lighten($dark-blue, 60%);
+
+$site-green--lighten5: lighten($site-green, 5%);
+$site-green--lighten10: lighten($site-green, 10%);
+$site-green--lighten15: lighten($site-green, 15%);
+$site-green--lighten20: lighten($site-green, 20%);
+$site-green--lighten30: lighten($site-green, 30%);
+$site-green--lighten40: lighten($site-green, 40%);
+
+// Transparent colors
 $site-black--translucent20: transparentize($site-black, 0.2);
 $site-black--translucent40: transparentize($site-black, 0.4);
 $site-black--translucent60: transparentize($site-black, 0.6);
