@@ -76,12 +76,10 @@
         var stat = formStatus[target][messageId];
 
         if (!status) {
-            console.log('brag', target, status, stat)
             if (stat.el && stat.el instanceof HTMLElement) stat.el.parentNode.removeChild(stat.el);
             stat.status = false;
 
         } else {
-            console.log('banter', target, status, stat);
             if (stat.status !== status){
                 stat.el = createElement(stat.type, stat.message, true);
                 stat.status = true;
@@ -108,7 +106,6 @@
     });
 
     inputs.email.addEventListener('blur', function(e) {
-        console.log('Email Blur');
         if (e.target.value === '') {
             changeStatusOf('email', 'noEmpty', true);
         } else {
@@ -117,7 +114,6 @@
     });
 
     inputs.message.addEventListener('blur', function(e) {
-        console.log('Message Blur')
         if (e.target.value === '') {
             changeStatusOf('message', 'noEmpty', true)
         } else {
@@ -134,24 +130,33 @@
         var email = sanitarize(inputs.email.value);
         var message = sanitarize(inputs.message.value);
 
-        axios.post('http://localhost:3000/api/hello', { name, email, message })
+        axios.post('https://apps.donniereese.com/api/hello', { name, email, message })
         .then(function (response) {
             changeStatusOf('submit', 'waiting', false);
             changeStatusOf('submit', 'success', true);
-            console.log(response);
         })
         .catch(function (error) {
             changeStatusOf('submit', 'waiting', false);
             changeStatusOf('submit', 'failed', true);
-            console.log(error);
         });
     })
 
-    const message = [
-        `          `,
-        `          `,
-        `          `,
-        `          `,
-        `          `,
+    var saycheese = [
+        `                                                              `,
+        `                         ,d                 ,d`,
+        `                         88                 88`,
+        `8b,dPPYba,   ,adPPYba, MM88MMM ,adPPYYba, MM88MMM ,adPPYba,`,
+        `88P'    "8a a8"     "8a  88    ""     \`Y8   88   a8"     "8a`,
+        `88       d8 8b       d8  88    ,adPPPPP88   88   8b       d8`,
+        `88b,   ,a8" "8a,   ,a8"  88,   88,    ,88   88,  "8a,   ,a8"`,
+        `88\`YbbdP"'   \`"YbbdP"'   "Y888 \`"8bbdP"Y8   "Y888 \`"YbbdP"'`,
+        `88`,
+        `87          100% Powered by 🥔 & ☕️ `,
+        `p `,
+        `   `
     ];
+
+    var msg = saycheese.join('\n');
+
+    console.log(msg);
 })()
