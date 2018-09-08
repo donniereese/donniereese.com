@@ -72,6 +72,45 @@ body {
   font-family: 'Roboto Slab', slab-serif;
   font-weight: 400; }
 
+h1 {
+  font-family: Slabo, sans-serif;
+  font-size: 2.4em;
+  font-weight: 900;
+  text-align: center; }
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 2.6em;
+  font-weight: 700; }
+
+a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+label {
+  font-family: 'Roboto Slab', slab-serif;
+  font-weight: 700; }
+
+input,
+textarea {
+  font-family: Montserrat, sans-serif;
+  font-size: 1em; }
+
+textarea {
+  font-size: .65em; }
+
+button {
+  font-family: 'Roboto Slab', slab-serif;
+  font-weight: 400; }
+
+.aside-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  font-weight: 700; }
+
 .about-blurb {
   text-align: left; }
   .about-blurb p {

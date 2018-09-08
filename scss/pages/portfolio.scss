@@ -1,0 +1,290 @@
+@import '../variables';
+@import '../bits/buttons';
+
+@import '../patterns/views/hero-section';
+@import '../patterns/portfolio/portfolio-article';
+@import '../patterns/portfolio/portfolio-section';
+@import '../patterns/message/message';
+@import '../patterns/message/errors/error';
+
+
+// css
+a.brand-header-logo {
+    // overflow: hidden;
+    display: block;
+    position: relative;
+    // right: -72%;
+    // right: -16.4rem;
+    // right: -260px;
+    // width: 134px;
+    height: 100%;
+
+    > img {
+        // border: 1rem solid $site-blue;
+        border-radius: 1rem;
+        box-shadow: .2rem .4rem 1rem .4rem $site-black--translucent80;
+        width: auto;
+        height: 100%;
+        // width: 360px;
+        // max-width: none;
+        // width: 480px;
+    }
+}
+
+.hero-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 94%;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-height: 60vh;
+    max-width: 1100px;
+    // padding-top: 8em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    @media only screen and (max-width: 620px) {
+      flex-direction: column;
+    }
+
+
+    .hero-logo {
+      display: block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      max-width: 1000px;
+      height: 100%;
+
+      @media only screen and (max-width: 620px) {
+        display: none;
+      }
+    }
+
+    .brand-header-logo {
+        display: block;
+        max-height: 100%;
+        position: relative;
+    }
+
+    .about-blurb {
+        align-self: flex-start;
+        display: block;
+        flex-shrink: 1;
+        padding-top: .75em;
+        // text-align: center;
+
+
+        .button {
+          display: block;
+          font-size: 1.6rem;
+          // margin: 2rem auto;
+          max-width: 24rem;
+          min-width: 18rem;
+          width: 60%;
+
+          @media only screen and (max-width: 620px) { margin: 2rem auto; }
+
+          @media only screen and (min-width: 621px) { margin: 2rem 1.6rem; }
+        }
+
+        p {
+            // background-color: $site-blue;
+            color: $site-white;
+            display: block;
+            margin: .25rem 1rem;
+            max-width: 48rem;
+            padding: .125rem .5rem;
+            text-align: left;
+
+            strong {
+              color: $site-green;
+              display: block;
+
+              @media only screen and (max-width: 620px) {
+                font-size: 120%;
+                margin-bottom: 1rem;
+              }
+            }
+
+            &:first-of-type {
+                background-color: none;
+                margin-top: 1rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 1rem;
+            }
+
+            @media only screen and (max-height: 361px) {
+                margin: 0;
+                float: none;
+                margin-left: -.245rem;
+                padding: .125rem 0;
+
+                &:first-of-type {
+                    margin-left: 1rem;
+                    padding-left: .5rem;
+                }
+
+                &:last-of-type {
+                    margin-right: 1rem;
+                    padding-right: .5rem;
+                }
+            }
+            @media only screen and (min-width: 460px) { font-size: 1.4rem; }
+            @media only screen and (min-width: 580px) { font-size: 1.6rem; }
+            @media only screen and (min-width: 620px) { font-size: 2.0rem; }
+            @media only screen and (min-width: 920px) { font-size: 2.4rem; }
+            @media only screen and (min-width: 1024px) { font-size: 2.8rem; }
+        }
+    }
+}
+
+
+
+.hero-section {
+    background-color: #1B1E20;
+    // background-color: #EDC10C;
+    // background-color: #0ced95;
+    // #8154FF
+    // background: url('https://donniereese.com/images/wiggle-bg.svg') top left / 52px 26px #EDC10C;
+    // background: url('https://donniereese.com/images/wiggle-bg.svg') top left / 52px 26px $site-yellow;
+
+    // dark on yellow
+    // background-color: #ecc02f;
+    // background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%2333253f' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+    // purple on dark blue
+    // background-color: $site-purple;
+    // background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%239c92AC' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+    // bright green on dark blue
+    background-color: #223a50;
+background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%235dd9c1' fill-opacity='0.19' fill-rule='evenodd'/%3E%3C/svg%3E");
+    //
+}
+
+.standout-nav {
+  border: .45em solid #000;
+  background-color: #e9e9ed; }
+
+.contact-section {
+  background-color: #fff; }
+
+.fine-print {
+  color: #335;
+  border-bottom: .25em solid #000; }
+
+.talkout {
+  background: url("laboratory.donniereese.com/images/talkout.png") center center no-repeat;
+  background-size: 100%; }
+
+.about-blurb {
+  background: url("../images/blurb-accent.png") top left no-repeat;
+  background-size: 2em; }
+
+
+
+
+
+
+// Typography
+.standout-nav a {
+  font-size: 1.45em;
+  padding: .45em .65em; }
+
+// Typography
+.fine-print {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+// Typography
+.talkout {
+    font-size: 2rem;
+    text-align: left;
+}
+
+// Typography
+.contact-form {
+  margin-top: 1.4em;
+
+  label {
+    font-size: 2em;
+  }
+
+  button {
+    font-size: 1.6em;
+  }
+}
+
+.about-section {
+  display: block;
+  // height: 100vh;
+  margin: 0 auto;
+  // max-height: 100vh;
+  padding: 4rem 1rem 8rem;
+  text-align: center;
+  width: 100%;
+
+  section {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2.4em;
+    font-size: 12vmin;
+
+    @media only screen and (max-height: 420px) { font-size: 2.4em; }
+    @media only screen and (min-height: 700px) { font-size: 3.6em; }
+  }
+
+  p {
+    font-size: 1.2em;
+    font-size: 3.5vw;
+
+    @media only screen and (max-width: 420px) { font-size: 1.2em; }
+    @media only screen and (min-width: 700px) { font-size: 2em; }
+  }
+}
+
+
+// footer
+.fine-print {
+  display: inline-block;
+  margin: 0 1em .9em;
+  padding: 2em .4em .5em;
+}
+
+// footer
+.talkout {
+  height: 16.23125em;
+  overflow: hidden;
+  padding: 4.8em 3.4em 2em 2.8em;
+  width: 20.25em;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        margin-bottom: 1.2em;
+    }
+    .hero-content .about-blurb,
+    .about-section .subsection,
+    .contact-section .contact-form {
+        width: 75%;
+    }
+    .contact-section .contact-form {
+        margin: 0 auto;
+        padding: 4rem 1rem 8rem;
+    }
+}
+
+.portfolio-content {
+    background-color: $site-white;
+}
+
+.push-up--by32 {
+    position: relative;
+    top: -16rem;
+}

@@ -449,46 +449,6 @@ a.brand-header-logo {
   background: url("../images/blurb-accent.png") top left no-repeat;
   background-size: 2em; }
 
-h1 {
-  font-family: Slabo, sans-serif;
-  font-size: 2.4em;
-  font-weight: 900;
-  text-align: center; }
-
-h2 {
-  font-family: Montserrat, sans-serif;
-  font-size: 2.6em;
-  font-weight: 700; }
-
-a {
-  font-weight: 400;
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
-
-label {
-  font-family: 'Roboto Slab', slab-serif;
-  font-weight: 700; }
-
-input,
-textarea {
-  font-family: Montserrat, sans-serif;
-  font-size: 1em; }
-
-textarea {
-  font-size: .65em; }
-
-button {
-  font-family: 'Roboto Slab', slab-serif;
-  font-weight: 400; }
-
-.aside-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8em;
-  font-weight: 700; }
-
 .standout-nav a {
   font-size: 1.45em;
   padding: .45em .65em; }
@@ -559,5 +519,11 @@ button {
   .contact-section .contact-form {
     margin: 0 auto;
     padding: 4rem 1rem 8rem; } }
+.portfolio-content {
+  background-color: #fff; }
 
-/*# sourceMappingURL=home.css.map */
+.push-up--by32 {
+  position: relative;
+  top: -16rem; }
+
+/*# sourceMappingURL=portfolio.css.map */

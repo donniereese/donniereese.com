@@ -4,4 +4,11 @@
     max-height: 32rem;
     padding: 4rem 2rem 2rem;
     position: relative;
+
+    .hero-header {
+        color: $site-green;
+        font-family: 'Roboto Slab', slab-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
 }
