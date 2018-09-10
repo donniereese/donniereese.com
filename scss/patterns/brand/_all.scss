@@ -1,0 +1,25 @@
+.brand-logo {
+
+}
+
+.brand-header-logo {
+    // overflow: hidden;
+    display: block;
+    position: relative;
+    // right: -72%;
+    // right: -16.4rem;
+    // right: -260px;
+    // width: 134px;
+    height: 100%;
+
+    > img {
+        // border: 1rem solid $site-blue;
+        border-radius: 1rem;
+        box-shadow: .2rem .4rem 1rem .4rem $site-black--translucent80;
+        width: auto;
+        height: 100%;
+        // width: 360px;
+        // max-width: none;
+        // width: 480px;
+    }
+}

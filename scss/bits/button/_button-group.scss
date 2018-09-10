@@ -1,0 +1,60 @@
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-grid {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+
+    @media only screen and (min-width: 460px) { width: 90% }
+    @media only screen and (min-width: 580px) { font-size: 120% !important; width: 82% }
+    @media only screen and (min-width: 620px) { font-size: 140% !important; width: 76% }
+    @media only screen and (min-width: 920px) { font-size: 160% !important; width: 64% }
+    @media only screen and (min-width: 1024px) { font-size: 180% !important; width: 56%; }
+}
+
+.grid-3x {
+    .button, .spacer {
+        border-radius: 0;
+        margin: 0;
+        width: 33.33333%;
+
+        &:first-of-type {
+            border-top-left-radius: .25rem;
+        }
+
+        &:last-of-type {
+            border-bottom-right-radius: .25rem;
+        }
+
+        &:nth-of-type(3) {
+            border-top-right-radius: .25rem;
+        }
+
+        &:nth-last-of-type(3) {
+            border-bottom-left-radius: .25rem;
+        }
+    }
+}
+
+.grid-4x {
+    .button, .spacer {
+        border-radius: 0;
+        margin: 0;
+        width: 25%;
+
+        &:first-of-type {
+            border-top-left-radius: .25rem;
+        }
+
+        &:last-of-type {
+            border-bottom-right-radius: .25rem;
+        }
+    }
+}
+
+.grid-with-shadow {
+    box-shadow: 0 1rem 2rem .2rem rgba(0,0,0,.2);
+}

@@ -58,6 +58,11 @@
 
 .btn--bg-green {
   background-color: $site-green;
+
+  &:hover {
+      background-color: darken($site-green, 40%) !important;
+      color: lighten($site-green, 40%) !important;
+  }
 }
 
 .btn--bg-yellow {
@@ -73,15 +78,19 @@
 }
 
 .btn--fg-blue {
-  color: $site-blue;
+  color: $site-blue !important;
 }
 
 .btn--fg-purple {
-  color: $site-purple;
+  color: $site-purple !important;
 }
 
 .btn--fg-green {
   color: $site-green;
+}
+
+.btn--fg-green-dark {
+    color: darken($site-green, 40%) !important;
 }
 
 .btn--fg-yellow {
@@ -95,6 +104,18 @@
 
 .btn--border-blue {
   border: .5rem solid $site-blue !important;
+}
+
+.btn--border-blue-alt {
+  border-color: desaturate(darken($site-blue, 20%), 40%) !important;
+}
+
+.btn--border-green {
+    border-color: $site-green;
+}
+
+.btn--border-green-alt {
+    border-color: $site-green--alternate;
 }
 
 .btn--border-accent {

@@ -1,7 +1,9 @@
 .hero-section {
+    background-color: #223a50;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%235dd9c1' fill-opacity='0.19' fill-rule='evenodd'/%3E%3C/svg%3E");
     height: 90vh;
-    min-height: 26rem;
     max-height: 32rem;
+    min-height: 26rem;
     padding: 4rem 2rem 2rem;
     position: relative;
 
@@ -10,5 +12,24 @@
         font-family: 'Roboto Slab', slab-serif;
         font-weight: 700;
         font-size: 1.8rem;
+        margin: 6rem 1rem 0;
     }
 }
+
+
+// .hero-section {
+//     background-color: #1B1E20;
+//     background-color: #EDC10C;
+//     background-color: #0ced95;
+//     // #8154FF
+//     background: url('https://donniereese.com/images/wiggle-bg.svg') top left / 52px 26px #EDC10C;
+//     background: url('https://donniereese.com/images/wiggle-bg.svg') top left / 52px 26px $site-yellow;
+//
+//     // dark on yellow
+//     background-color: #ecc02f;
+//     background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%2333253f' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+//     // purple on dark blue
+//     background-color: $site-purple;
+//     background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%239c92AC' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+//     // bright green on dark blue
+// }
