@@ -130,7 +130,7 @@
         var email = sanitarize(inputs.email.value);
         var message = sanitarize(inputs.message.value);
 
-        axios.post('https://apps.donniereese.com/api/hello', { name, email, message })
+        axios.post('https://app.donniereese.com/api/hello', { name, email, message })
         .then(function (response) {
             changeStatusOf('submit', 'waiting', false);
             changeStatusOf('submit', 'success', true);
