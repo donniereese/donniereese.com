@@ -1,4 +1,3 @@
-
 class WebTerm {
     constructor() {
         this._version = '0.0.6';
@@ -30,6 +29,78 @@ _______________________________\n  \n
         this.history = [];
         this.historyPointer = -1;
 
+        class Dictionary {
+            constructor() {
+                this._dict = {};
+                this._commands = [];
+            }
+
+            add(entry) {
+                if (!(entry instanceof DictionaryEntry)) throw new Error('You cannot add an entry that is not an instance of DictionaryEntry');
+            }
+        }
+
+        class ArgType {
+            constructor(arg = '', types = []) {
+                if (arg.length === 0) throw new Error('Must supply argument with a minimum character of 1');
+                if (!this.verifyTypesArray) throw new Error('Missformated type located in types for Arguments');
+
+                this._argName = arg;
+                this._types = types;
+            }
+
+            static verifyTypesArray(types = []) {
+                return types.every((val) => typeof val === 'string');
+            }
+        };
+
+        class DictionaryEntry {
+            constructor(dictionary, data = {}) {
+                if (!dictionary) throw new Error('You did something wrong.  No dictionary was provided.');
+
+                const { name, type, matchString, description, arguments } = data;
+                const {required, count, types} = arguments;
+
+                if (!required && !count && !types) delete arguments;
+
+                if (arguments) {
+                    arguments = {};
+
+                    if (required && typeof required === 'boolean') arguments.required = required;
+                    if (count && typeof count === 'number') arguments.count = count;
+
+                    if (Array.isArray(types)) {
+                        let arr = [];
+
+                        for (let i = 0, c = 0; i < types.length && c === 0; i++) {
+                            const it = types[i];
+                            if (typeof it !== 'string') {
+                                c = 1;
+                                arr = [];
+                            } else {
+                                arr.push(types[i]);
+                            }
+                        }
+
+                        if (arr.length === 0) types = arr;
+                        else delete types;
+                    }
+                }
+            }
+
+            addArgument(arg, types = []) {
+                if (!arg) throw new Error('')
+            }
+
+            addArguments(argsArray = []) {
+
+            }
+
+        }
+
+        this.dictionary = new Dictionary();
+        this.DictionaryEntry = DictionaryEntry;
+
         // Find button instances by class
         const buttonMatches = document.getElementsByClassName('termButton');
         // return null if none
@@ -41,6 +112,10 @@ _______________________________\n  \n
         setTimeout(() => {
             this.button.classList.replace('termButton--hidden', 'termButton--animation');
         }, 2000)
+    }
+
+    DictionaryEntry(data = {}) {
+      return new this._dictEntry(this.dictionary, data);
     }
 
     /**
