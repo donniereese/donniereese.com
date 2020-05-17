@@ -38,6 +38,10 @@ _______________________________\n  \n
             add(entry) {
                 if (!(entry instanceof DictionaryEntry)) throw new Error('You cannot add an entry that is not an instance of DictionaryEntry');
             }
+
+            match() {
+
+            }
         }
 
         class ArgType {
@@ -54,6 +58,18 @@ _______________________________\n  \n
             }
         };
 
+        class Argset {
+          constructor() {}
+
+          add() {
+
+          }
+
+          has() {
+
+          }
+        }
+
         class DictionaryEntry {
             constructor(dictionary, data = {}) {
                 if (!dictionary) throw new Error('You did something wrong.  No dictionary was provided.');
@@ -63,7 +79,7 @@ _______________________________\n  \n
 
                 if (!required && !count && !types) delete arguments;
 
-                if (arguments) {
+                if (arguments) { this.addArguments(arguments);
                     arguments = {};
 
                     if (required && typeof required === 'boolean') arguments.required = required;
@@ -93,9 +109,11 @@ _______________________________\n  \n
             }
 
             addArguments(argsArray = []) {
-
+                for (let i = 0; i < argsArray.length; i++) {
+                  const arg = this.addArgument(argsArray[i]);
+                  return false;
+                }
             }
-
         }
 
         this.dictionary = new Dictionary();
